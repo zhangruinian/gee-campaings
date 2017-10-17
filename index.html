@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>极验3.0新品发布</title>
+    <link rel="stylesheet" href="release-statics/style.1.0.css?122">
+    <link rel="stylesheet" media="(max-height: 560px)" href="./release-statics/small.css"/>
+    <link rel="stylesheet" href="./release-statics/jquery.fullpage.min.css">
+    <script src="./release-statics/js/jquery-3.2.0.js"></script>
+    <script src="./release-statics/js/jquery.fullpage.min.js"></script>
+
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?25b04a5e7a64668b9b88e2711fb5f0c4";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+</head>
+<body>
+<div class="loading">
+    <div class="londing-content">
+        <div>载入中</div>
+        <span id="progress">0</span>%
+    </div>
+    <div class="logo">
+        <img src="./release-statics/img/logo.png" alt="极验验证">
+        <span class="logo-text">互联网安全服务商</span>
+    </div>
+</div>
+<div class="intro page hidden">
+    <div class="bg-video">
+        <img src="./release-statics/bg.gif" alt="">
+    </div>
+    <div class="title-wrap">
+        <div class="small">告别繁琐</div>
+        <div class="big">让验证简单'一点'</div>
+    </div>
+    <div class="release-icon"> 极验3.0 新品发布</div>
+    <div class="exp-button" id="goExp">立即体验</div>
+    <div class="logo">
+        <img src="./release-statics/img/logo.png" alt="极验验证">
+        <span class="logo-text">互联网安全服务商</span>
+    </div>
+</div>
+
+<div class="exp-page page hidden">
+    <div class="top-logo">
+        <img src="./release-statics/img/logo.png" alt="极验验证">
+    </div>
+
+    <div class="hint">
+        <div class="hint-wrap">
+            <div class="arrow-up shake-down"><img src="./release-statics/img/up.png" alt=""></div>
+            <div class="arrow-down shake-up"><img src="./release-statics/img/down.png" alt=""></div>
+            <div class="hint-text">点击按钮进行验证</div>
+        </div>
+    </div>
+
+    <img class="exp-bg" src="./release-statics/img/bgwave.png">
+    <div class="exp-content">
+        <div class="exp-title-wrap">
+            <div class="big">极验验证3.0新品体验</div>
+            <div class="small">试试全新的验证方式吧</div>
+        </div>
+        <div class="table">
+            <div class="table-item first">
+                <img src="./release-statics/img/USER.png" alt="">
+                <span>hello@geetest.com</span>
+            </div>
+            <div class="table-item">
+                <img src="./release-statics/img/LOCK.png" alt="">
+                <img id="password" src="./release-statics/img/password.png" alt="">
+            </div>
+        </div>
+        <div class="captcha-wrap">
+            <div id="captcha" onclick="playVideo()"></div>
+        </div>
+        <div class="login-button" id="login">
+            登录
+        </div>
+        <div class="finish-hint hidden">
+            <img class="shake-down" src="./release-statics/img/arrow.png" alt="">
+            <div>验证成功了</div>
+            <div>点击登录继续吧</div>
+        </div>
+    </div>
+    <div id="canvas_output">
+        <video id="video" style="display: none" muted webkit-playsinline playsinline
+               type="video/mp4" x5-video-player-type="h5" x5-video-orientation="portraint"
+               x5-video-player-fullscreen="true"></video>
+
+        <canvas width="750" height="668" id="buffer"></canvas>
+        <canvas width="375" height="668" id="output"></canvas>
+    </div>
+
+</div>
+
+
+<div class="final-page hidden">
+    <div class="section describe section1">
+        <div class="section-wrap">
+            <img class="exp-bg" src="./release-statics/img/bgwave.png">
+            <div class="wrap">
+                <div class="title">您已完成全新的验证体验</div>
+                <div class="describe-content">
+                    <div class="left">
+                        <div class="item">
+                            <img src="./release-statics/img/timer.png" alt="">
+                            <div>极速人机判断</div>
+                        </div>
+                        <div class="item">
+                            <img src="./release-statics/img/star.png" alt="">
+                            <div>完美验证体验</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img class="ani-right" src="./release-statics/img/describe.png" alt="">
+                    </div>
+                </div>
+                <div class="long ani-down">
+                    在刚才的验证过程中，动画展示了极验通过构建风险判断引擎和行为验证系统，实现了验证的智能推送和跨越式的安全等级，但是实际验证过程只需0.4秒。
+                </div>
+                <div class="scroll-tip">
+                    <div>下滑了解更多</div>
+                    <img src="./release-statics/img/scroll.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section feature section2">
+        <div class="feature-wrap">
+            <div class="feature-bg"><img src="./release-statics/img/lingdong-bg.png" alt=""></div>
+            <div class="title big">灵动</div>
+            <div class="title small">用智能驯服风险</div>
+            <div class="small-logo">
+                <img src="./release-statics/img/lingdong.png" alt="">
+            </div>
+            <div class="text">
+                智能风险判定引擎 RIE(Risk Intelligent Engine)，根据实时风险态势推送最优验证策略
+            </div>
+            <img class="feature-img lingdong-img ani-down" src="./release-statics/img/lingdong-img.png" alt="">
+        </div>
+    </div>
+    <div class="section feature section3">
+        <div class="feature-wrap">
+            <div class="feature-bg"><img src="./release-statics/img/zaowu-bg.png" alt=""></div>
+            <div class="title big">造物</div>
+            <div class="title small">用参数创造艺术</div>
+            <div class="small-logo">
+                <img src="./release-statics/img/zaowu.png" alt="">
+            </div>
+            <div class="text">
+                利用神经网络对艺术图片进行充满想象力的艺术风格渲染，验证从未如此优雅
+            </div>
+            <img class="feature-img zaowu-img  ani-down" src="./release-statics/img/zaowu-img.png" alt="">
+        </div>
+    </div>
+    <div class="section feature section4">
+        <div class="feature-wrap">
+            <div class="feature-bg"><img src="./release-statics/img/zongguan-bg.png" alt=""></div>
+            <div class="title big">纵观</div>
+            <div class="title small">用数据掌控全局</div>
+            <div class="small-logo">
+                <img src="./release-statics/img/zongguan.png" alt="">
+            </div>
+            <div class="text">
+                多维可视化验证数据 <br>
+                全面把控验证安全
+            </div>
+            <img class="feature-img zongguan-img  ani-down" src="./release-statics/img/zongguan-img.png" alt="">
+        </div>
+    </div>
+    <div class="section conclusion section5">
+        <div class="section-wrap">
+            <img class="exp-bg" src="./release-statics/img/bgwave.png">
+            <img class="fianl-bg" src="./release-statics/img/final-bg.png">
+            <div class="wrap">
+                <div class="final-logo"><img src="./release-statics/img/logo.png" alt=""></div>
+                <div class="center">
+                    <div class="title">
+                        全球16万家网站<br>
+                        信赖之选
+                    </div>
+                    <div class="final-button">
+                        前往官网
+                    </div>
+
+                </div>
+                <div class="footer">
+                    <div class="search">
+                        <img src="./release-statics/img/search.png" alt="">
+                        <div class="search-text">极验验证</div>
+                        <div class="link">极验给您应有的验证安全</div>
+                    </div>
+                    <br>
+                    Powered by Geetest.2017
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./release-statics/js/fullpage.7.2.0.js"></script>
+<script src="release-statics/js/main.1.0.2.js?new"></script>
+
+</body>
+</html>

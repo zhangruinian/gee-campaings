@@ -1,0 +1,62 @@
+.exp-button {
+    bottom: 13%;
+}
+
+.title-wrap {
+    font-size: 35px;
+}
+
+.logo {
+    bottom: 3%;
+}
+
+.exp-title-wrap {
+    margin-top: 10%;
+}
+
+.table {
+    margin-top: 18px;
+}
+
+.finish-hint {
+    font-size: 14px;
+}
+
+.describe .title {
+    margin-top: 8%;
+}
+
+.left {
+    margin-top: 25px;
+}
+
+.long {
+    font-size: 12px;
+    bottom: 7%;
+}
+
+.scroll-tip {
+    bottom: 2%;
+}
+
+.scroll-tip div {
+    display: none;
+}
+
+.feature .title.big {
+    font-size: 36px;
+    margin-top: 6%;
+}
+
+.feature .title.small {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.feature-img {
+    margin-top: 0;
+}
+
+.small-logo {
+    margin-top: 20px;
+}
